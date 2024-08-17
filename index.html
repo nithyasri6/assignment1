@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Times New Roman;
+            margin: 0.5;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #87CEEB;
+            color: Black;
+        }
+
+        header {
+            background-color: #E6E6FA;
+            color: Black;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid ;
+        }
+
+        header img {
+            border-radius: 100%;
+	    background-color:red;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 2px solid ;
+        }
+
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #about img {
+            border-radius: 50%;
+	    background-color:red;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        #skills {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .skill {
+            margin: 15px 0;
+        }
+
+        .skill-name {
+            
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 20px;
+            background-color: green;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 20px;
+            color: white;
+            border-radius: 20px;
+        }
+
+        #projects {
+            padding: 40px 0;
+        }
+
+        #projects .project-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #projects .project {
+            background: #FFDBE9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+        }
+
+        #projects .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        #projects .project h3 {
+            margin: 15px 0;
+        }
+
+        #projects .project a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: lightyellow;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2024/02/14/05/34/girl-8572400_640.png" alt="Your Name Header Photo">
+        </div>
+        <div>
+            <h1>NITHYA SRI</h1>
+            <p>Student at @VIGNAN UNIVERSITY</p>
+            <nav>
+                <ul>
+                    <li><a href="#home"><u>Home</u></a></li>
+                    <li><a href="#about"><u>About</u></a></li>
+                    <li><a href="#projects"><u>Projects</u></a></li>
+                    <li><a href="#contact"><u>Contact</u></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio!</h2>
+        <pre>
+        I'm NITHYA SRI, a computer science student at VIGNAN UNIVERSITY,GUNTUR,ANDRA PRADESH, passionate about 
+	building innovative software solutions.
+	This is my space to showcase my projects, experiments, and learnings as I navigate the world of tech.
+	Explore my portfolio to see what I've been working on projects and my skills. 
+	I'm excited to share my journey with you and learn from others in the tech community. 
+	Let's connect and grow together!
+</pre>
+    </section>
+
+    <section id="about">
+        <div>
+            <img src="https://t4.ftcdn.net/jpg/05/11/45/91/360_F_511459113_jY6uaHOEg8HR2mhNGsLPls579fC2rwdI.jpg" alt="Your Name Profile Photo">
+        </div>
+        <div>
+            <h2><u>About Me</u></h2>
+            <pre>
+  I'm NITHYA SRI, a computer science student at VIGNAN UNIVERSITY,GUNTUR,ANDRA PRADESH, passionate about
+  building innovative software solutions.
+  This is my space to showcase my projects, experiments, and learnings as I navigate the world of tech.
+  Explore my portfolio to see what I've been working on projects and my skills.
+  I'm excited to share my journey with you and learn from others in the tech community. 
+  Let's connect and grow together!
+</pre>
+
+            <h3><u>Education</u></h3>
+	  <pre>
+                <li>Bachelor's in Computer Science (Currently pursuing) at VIGNAN UNIVERSITY</li>
+            
+	</pre>
+            <h3><u>Professional Interests</u></h3>
+            <pre>I am interested in web development, coding, UI/UX design, 
+			and machine learning applications in web platforms.</pre>
+        </div>
+	</section>
+
+<section>
+        <div id="skills">
+            <h3>Skills</h3>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 70%;">70%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 70%;">70%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 60%;">60%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 65%;">65%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 80%;">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <div class="container">
+            <h2><u>Projects</u></h2>
+            <div class="project-list">
+                <div class="project">
+		    <h3>Project-1:Ambulance Booking System</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7dLdT43sA1P2NeaDlDSbat5NRXvStsb8zQ&s" alt="Project 1">
+                    <p>An ambulance booking system allows users to request emergency medical assistance through a user-friendly interface that collects essential details and tracks the ambulance's arrival in real-time. The backend matches requests with the nearest available ambulance, integrates with hospitals for efficient patient handover, and manages fleet and crew schedules. It includes robust data protection and compliance features. The system relies on a mobile app or website for user access and uses GPS for tracking and routing.</p>
+                    <a href="link-to-live-demo-or-repository">View Project</a>
+                </div>
+                <div class="project">
+		    <h3>Project-2:Intelligent Video Surveillance Using Deep Learning System</h3>
+                    <img src="https://pavion.com/wp-content/uploads/2023/07/shutterstock_1923576011-1-scaled.jpg" alt="Project 2">
+                    <p>Intelligent video surveillance using deep learning systems leverages advanced algorithms to analyze video feeds in real-time, identifying and classifying objects, behaviors, and anomalies. These systems enhance security by detecting potential threats or unusual activities with high accuracy. Integration with alerts and automated responses allows for rapid and efficient incident management.</p>
+                    <a href="link-to-live-demo-or-repository">View Project</a>
+                </div>
+                <div class="project">
+		    <h3>Project-3:Train Food Ordering App</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5pKtmCWOuEv7TG1jj8Z5wCGWf6dyLx_d2dg&s" alt="Project 3">
+                    <p>A train food ordering app enables passengers to browse menus, place orders, and pay for meals directly from their smartphones while traveling. The app integrates with train schedules to ensure timely delivery of food to passengers' seats. It enhances the travel experience with convenient, on-demand food services and real-time order tracking.</p>
+                    <a href="link-to-live-demo-or-repository">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2><u>Contact Me</u></h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+        <div class="contact-links">
+            <h2><b>You can also reach me at:</b></h2>
+            <a href="mailto:cnithyasri02@gmail.com"><u>E-MAIL</u>:cnithyasri02@gmail.com</a></div>
+	<div>
+            <a href="www.linkedin.com/in/nithya-ch-130920316"><u>LinkedIn</u>: www.linkedin.com/in/nithya-ch-130920316</a>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 NITHYA SRI | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
